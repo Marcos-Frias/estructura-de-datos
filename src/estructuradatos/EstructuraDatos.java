@@ -69,7 +69,6 @@ public class EstructuraDatos {
         
         /* Declaracion*/
         ArrayList<String> alumnos;
-        
         /*Instancia*/
         alumnos = new ArrayList<>();
         /*Agregar*/
@@ -82,7 +81,6 @@ public class EstructuraDatos {
         }
         /*Eliminar*/
         alumnos.remove(2);
-        
         for (int i = 0; i < alumnos.size(); i++) {
             System.out.println("DELETE: "+alumnos.get(i));
         }
