@@ -5,6 +5,8 @@
  */
 package estructuradatos;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author marco
@@ -38,29 +40,51 @@ public class EstructuraDatos {
         /* Matrices */
         
         /*Declaración eh inicialización de una matriz de int*/
-        int[][] matriz_number;
-        matriz_number = new int[3][3];
+//        int[][] matriz_number;
+//        matriz_number = new int[3][3];
         
         /*Agregar valores a una matriz*/
-        matriz_number[0][0] = 100;
-        matriz_number[0][1] = 100;
-        matriz_number[0][2] = 100;
-        matriz_number[1][0] = 200;
-        matriz_number[1][1] = 200;
-        matriz_number[1][2] = 200;
-        matriz_number[2][0] = 300;
-        matriz_number[2][1] = 300;
-        matriz_number[2][2] = 300;
+//        matriz_number[0][0] = 100;
+//        matriz_number[0][1] = 100;
+//        matriz_number[0][2] = 100;
+//        matriz_number[1][0] = 200;
+//        matriz_number[1][1] = 200;
+//        matriz_number[1][2] = 200;
+//        matriz_number[2][0] = 300;
+//        matriz_number[2][1] = 300;
+//        matriz_number[2][2] = 300;
         
         /*Matriz inicializada con valores*/
         //matriz_number = {  {10,20,30},{40,50,60},{70,80,90},  {10,20,30},{40,50,60},{70,80,90} };
         
         /*Recorrer una matriz*/
-        for (int i = 0; i < matriz_number.length ; i++) {
-            for (int j = 0; j < matriz_number[i].length; j++) {
-                System.out.print(matriz_number[i][j]+" | ");
-            }
-            System.out.println();
+//        for (int i = 0; i < matriz_number.length ; i++) {
+//            for (int j = 0; j < matriz_number[i].length; j++) {
+//                System.out.print(matriz_number[i][j]+" | ");
+//            }
+//            System.out.println();
+//        }
+        
+                /* ArrayList */
+        
+        /* Declaracion*/
+        ArrayList<String> alumnos;
+        
+        /*Instancia*/
+        alumnos = new ArrayList<>();
+        /*Agregar*/
+        alumnos.add("Raul");
+        alumnos.add("Alfredo");
+        alumnos.add("Marcos");
+        /*Recorrer*/
+        for (int i = 0; i < alumnos.size(); i++) {
+            System.out.println("ADD: "+alumnos.get(i));
+        }
+        /*Eliminar*/
+        alumnos.remove(2);
+        
+        for (int i = 0; i < alumnos.size(); i++) {
+            System.out.println("DELETE: "+alumnos.get(i));
         }
         
     }
