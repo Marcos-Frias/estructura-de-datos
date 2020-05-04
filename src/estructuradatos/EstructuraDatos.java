@@ -111,7 +111,7 @@ public class EstructuraDatos {
         }
         
         System.out.println("FACTORIAL DE: "+ numFact+" ES " + fact);
-
+        
     }
 
 }
